@@ -71,7 +71,8 @@ def play_logic(rounds):
            print "No sensible option chosen"
   
         rounds -= 1
-        
+
+# Print out winner of the round   
 def decide_winner(human_score,computer_score):
     if human_score > computer_score:
         print "Human wins the set"
