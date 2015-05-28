@@ -2,6 +2,7 @@
 # Author : Dimeji Fayomi
 # Created : 2015/05/27
 # Version : 1.0
+            
 # Description : A rock, scissor, paper game to be played betweeen human and  computer player,
 #               the human choses an option and the computer choice one option at random and a winner
 #               is determined.
@@ -12,6 +13,9 @@ from sys import exit
 human_score = 0
 computer_score = 0
 
+## TO DO
+# Change score tally from global variables
+#
 # keep the score of the game, true for human wins and false for computer
 def score_keeper(bool_winner):
     global human_score
@@ -23,6 +27,7 @@ def score_keeper(bool_winner):
     print "Your Score is:", human_score
     print "Computer's score is:", computer_score
     print "\n"
+
 # Function that controls the game
 def play_logic(rounds):
     comp_list = ['rock','scissors','paper']
