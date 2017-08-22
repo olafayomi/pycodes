@@ -1,0 +1,13 @@
+Ideas
+-----
+1.) Do interVLAN routing on a zodiac switch and make it completely transparent 
+    to the end devices connected to the ports.
+    - Eth0 is a VLAN trunk port, allow certain VLANs through, send others
+      to the controller.
+    - The rest of the ports should allow traffic from any of the whitelisted VLANs
+      and it should be transparent to the end devices connected to these ports, i.e
+      there should be flow rules that strip packets that will be forward out of these
+      interfaces of VLANs and append VLAN tags to incoming packets received on these
+      interfaces so that they can be forwarded out the right port.
+    
+
