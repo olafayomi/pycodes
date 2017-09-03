@@ -9,5 +9,9 @@ Ideas
       there should be flow rules that strip packets that will be forward out of these
       interfaces of VLANs and append VLAN tags to incoming packets received on these
       interfaces so that they can be forwarded out the right port.
+    - This might be the most important -- Implement InterVLAN routing on an OpenFlow
+      switch with a OpenFlow Controller.
+    - Add policy based routing and application specific route selection to the controller.
+    
     
 
