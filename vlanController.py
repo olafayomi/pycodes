@@ -13,5 +13,8 @@ from ryu import cfg
 import argparse
 # either take dpid from  terminal or read from yaml
 config_parser  = argparse.ArgumentParser(description='InterVLAN Routing Controller')
-config_parser.add_argument 
+config_parser.add_argument('-c', action='store', dest='config_file',
+                           default='/usr/local/etc/ryu/janus.yaml'
+                           help='Pass a YAML config file to the app')
+
 
